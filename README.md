@@ -1,2 +1,2 @@
 # commonform-alex
-Critique Common Forms for insensitive language
+Critique contracts in [Common Form](https://github.com/commonform) for insensitive language using [Alex](https://github.com/wooorm/alex).
