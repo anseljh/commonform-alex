@@ -1,0 +1,33 @@
+{
+  "name": "commonform-alex",
+  "version": "0.1.0",
+  "description": "Critique Common Forms for insensitive language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anseljh/commonform-alex.git"
+  },
+  "keywords": [
+    "contracts",
+    "law",
+    "language",
+    "english",
+    "writing",
+    "insensitive",
+    "race",
+    "sex",
+    "gender"
+  ],
+  "author": "Ansel Halliburton",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/anseljh/commonform-alex/issues"
+  },
+  "homepage": "https://github.com/anseljh/commonform-alex#readme",
+  "dependencies": {
+    "alex": "^1.3.0"
+  }
+}
