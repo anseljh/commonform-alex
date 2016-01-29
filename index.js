@@ -10,7 +10,7 @@ var inconsiderates = [];
 equality_patterns.forEach(function(hash, index, arr) {
   Object.keys(hash.inconsiderate).forEach(function(key, index, arr2) {
     inconsiderates.push(key);
-  })
+  });
 });
 
 // TODO: Exclude common legal words that aren't offensive (#1)
@@ -37,7 +37,7 @@ function annotator(form, path, string) {
     level: 'info',
     path: path,
     source: 'commonform-alex',
-    url: null } }
+    url: null }; }
 
 // The End! Initialize and export our phrase annotator.
 module.exports = phraseAnnotator(inconsiderates, annotator);
