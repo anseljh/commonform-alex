@@ -1,6 +1,6 @@
 {
   "name": "commonform-alex",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Critique Common Forms for insensitive language",
   "main": "index.js",
   "scripts": {
