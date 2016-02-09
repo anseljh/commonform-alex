@@ -29,10 +29,10 @@
   "homepage": "https://github.com/anseljh/commonform-alex#readme",
   "dependencies": {
     "commonform-phrase-annotator": "^1.0.2",
-    "retext-equality": "^2.0.0"
+    "retext-equality": "^2.2.1"
   },
   "devDependencies": {
-    "defence-cli": "^1.0.1",
-    "replace-require-self": "^1.0.0"
+    "defence-cli": "^1.0.5",
+    "replace-require-self": "^1.1.0"
   }
 }
