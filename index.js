@@ -13,19 +13,16 @@ equality_patterns.forEach(function(hash, index, arr) {
   });
 });
 
-// TODO: Exclude common legal words that aren't offensive (#1)
-// Subtract phrases that are not offensive in legal context, e.g., "illegal"
-// var excludes = require('./data/excludes.json');
-// var with_exclusions = inconsiderates.filter(function(item) {
-//   // return !(item in excludes) ? true : false;
-//   if (!(item in excludes)) {
-//     return true;
-//   } else {
-//     console.log('- excluding ' + item);
-//     return false;
-//   }
-// })
-// console.log(with_exclusions.length);
+// Subtract phrases that are not offensive in legal context
+var excludes = require('./data/excludes.json');
+var filter_func = function(item) {
+  if (excludes.indexOf(item) != -1 ) {
+    return false;
+  } else {
+    return true;
+  }
+};
+var with_exclusions = inconsiderates.filter(filter_func);
 
 // TODO: Move above data wrangling steps into build script (#2)
 
@@ -40,4 +37,4 @@ function annotator(form, path, string) {
     url: null }; }
 
 // The End! Initialize and export our phrase annotator.
-module.exports = phraseAnnotator(inconsiderates, annotator);
+module.exports = phraseAnnotator(with_exclusions, annotator);
