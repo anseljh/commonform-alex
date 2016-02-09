@@ -38,6 +38,12 @@ assert.deepEqual(
           source: 'commonform-alex',
           url: null } ] )
 
+// Exclusion test
+
+assert.deepEqual(
+  annotator({ content: [ 'Talking about paternity is acceptable in family law cases, so we allow it.' ] }),
+  [ ] )
+
 // Many test
 
 assert.deepEqual(
